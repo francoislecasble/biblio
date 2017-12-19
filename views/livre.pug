@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1 Les livres
+
+    p Voici la liste des livres:
+    ul
+        each livre in listeLivres.rows
+            li
+                a(href='/livre/'+ livre['idlivre']+'')= livre['titre']

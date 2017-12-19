@@ -1,0 +1,11 @@
+extends layout
+
+block content
+
+    h1 Voici les exemplaires
+
+    p Voici la liste des exemplaires
+    ul
+        each livre in listeLivres.rows
+            li
+                res=livre['titre']
